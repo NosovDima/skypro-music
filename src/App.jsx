@@ -1,11 +1,11 @@
 import "./App.css";
-import MediaPlayer from "./components/MediaPlayer"; 
-import MainNav from "./components/MainNav";
-import Search from "./components/Search";
-import Filter from "./components/Filter";
-import Content from "./components/Content";
-import SideBarPersonal from "./components/SideBarPersonal";
-import SideBarBlock from "./components/SideBarBlock";
+import MediaPlayer from "./components/MediaPlayer/MediaPlayer"; 
+import MainNav from "./components/MainNav/MainNav";
+import Search from "./components/Search/Search";
+import Filter from "./components/Filter/Filter";
+import Content from "./components/Content/Content";
+import SideBarPersonal from "./components/SideBarPersonal/SideBarPersonal";
+import SideBarBlock from "./components/SideBarBlock/SideBarBlock";
 
 function App() {
   return (
