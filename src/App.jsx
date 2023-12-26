@@ -6,8 +6,36 @@ import Filter from "./components/Filter/Filter";
 import Content from "./components/Content/Content";
 import SideBarPersonal from "./components/SideBarPersonal/SideBarPersonal";
 import SideBarBlock from "./components/SideBarBlock/SideBarBlock";
+// import { useEffect } from "react";
+
 
 function App() {
+
+  
+  
+  
+  
+  
+  // const [data, setData] = useState()
+
+  // const [isLoading, setIsLoading] = useState(false)
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     setIsLoading(true)
+  //     const response = await axios.get("url")
+  //     setIsLoading(false)
+  //     setData(response.data)
+  //   }
+
+  //   fetchData()
+
+  // })
+
+
+
+
+
   return (
     
     <> <div className="wrapper">

@@ -1,6 +1,25 @@
 import "./Content.css";
+import  { useState, useEffect } from "react";
 
-function Content() {
+
+const SkeletonSVG = () => (
+  <svg>
+    <use xlinkHref="icons/Group 18550.svg#icon-nav"></use>
+    <rect width="100%" height="100%" />
+  </svg>
+);
+
+const Content = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 5000); 
+  }, []);
+
+
+
     return ( 
       <div className="centerblock__content">
       <div className="content__title playlist-title">
@@ -16,34 +35,18 @@ function Content() {
       <div className="content__playlist playlist">
         <div className="playlist__item">
           <div className="playlist__track track">
-            <div className="track__title">
-              <div className="track__title-image">
-                <svg className="track__title-svg" alt="music">
-                  <use xlinkHref="img/icon/sprite.svg#icon-note"></use>
-                </svg>
+            {isLoading && (
+              <div className="skeleton">
+              
+              
+              
+                <SkeletonSVG />
               </div>
-              <div className="track__title-text">
-                <a className="track__title-link" href="http://"
-                >Guilt <span className="track__title-span"></span></a>
-              </div>
-            </div>
-            <div className="track__author">
-              <a className="track__author-link" href="http://">Nero</a>
-            </div>
-            <div className="track__album">
-              <a className="track__album-link" href="http://"
-              >Welcome Reality</a>
-            </div>
-            <div className="track__time">
-              <svg className="track__time-svg" alt="time">
-                <use xlinkHref="img/icon/sprite.svg#icon-like"></use>
-              </svg>
-              <span className="track__time-text">4:44</span>
-            </div>
-          </div>
-        </div>
+            )}
 
-        <div className="playlist__item">
+            {!isLoading (
+
+              <div className="playlist__item">
           <div className="playlist__track track">
             <div className="track__title">
               <div className="track__title-image">
@@ -71,6 +74,13 @@ function Content() {
             </div>
           </div>
         </div>
+            )}
+
+            
+          </div>
+        </div>
+
+        
 
         <div className="playlist__item">
           <div className="playlist__track track">
