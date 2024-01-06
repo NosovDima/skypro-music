@@ -196,11 +196,7 @@
 .skeleton {
   display: flex;
   flex-direction: column;
-}
-.skeleton-element {
-  margin-bottom: 192px;
-  margin-top: 100px;
-  padding-top: 100px;
-  padding-bottom: 200px;
+  margin-top: 10px;
+  
 }
 

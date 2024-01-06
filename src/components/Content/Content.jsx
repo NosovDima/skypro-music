@@ -13,6 +13,7 @@ const TrackSkeleton = () => (
     viewBox="0 0 1107 200"
     backgroundColor="#f2f2f2"
     foregroundColor="#c47878"
+    spacing={1}
   >
     <rect x="802" y="25" rx="5" ry="5" width="305" height="19" /> 
     <rect x="481" y="25" rx="5" ry="5" width="271" height="19" />
