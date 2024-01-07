@@ -1,17 +1,32 @@
 import "./Filter.css";
+import { useState } from "react";
+import AuthorFilterOptions from "../Buttons/AuthorFilterOptions";
+import GenreFilterOptions from "../Buttons/GenreFilterOptions";
+import YearFilterOptions from "../Buttons/YearFilterOptions";
+import AuthorButton from "../Buttons/authorButton";
+import YearButton from "../Buttons/yearButton";
+import GenreButton from "../Buttons/genreButton"; 
 
 function Filter() {
+
+  const [visible, setVisible] = useState(null)
+  const toggleVisibility = (filter) => {
+    setVisible(visible === filter ? null : filter)
+  }
+  const [isActive, setIsActive] = useState(false);
+  const handleButtonClick = () => {
+    setIsActive(!isActive);
+  };
     return ( 
-        <div className="centerblock__filter filter">
-              <div className="filter__title">Искать по:</div>
-              <div className="filter__button button-author _btn-text">
-                исполнителю
-              </div>
-              <div className="filter__button button-year _btn-text">
-                году выпуска
-              </div>
-              <div className="filter__button button-genre _btn-text">жанру</div>
-            </div>
+      <div className="centerblock__filter filter">
+      <div className="filter__title">Искать по:</div>
+      <div><AuthorButton onClick={() => {toggleVisibility("author"); handleButtonClick() }} isActive={isActive}/>
+      {visible === "author" && <AuthorFilterOptions/>}</div>
+      <div><YearButton onClick={() => toggleVisibility("year")}/>
+      {visible === "year" && <YearFilterOptions/>}</div>
+      <div><GenreButton onClick={() => {toggleVisibility("genre"); handleButtonClick()}}/>
+      {visible === "genre" && <GenreFilterOptions/>}</div>
+    </div>
 
 
         );
