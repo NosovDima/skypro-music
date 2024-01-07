@@ -43,3 +43,8 @@
   width: 100%;
   height: auto;
 }
+.SideBarSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
