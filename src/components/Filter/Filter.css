@@ -1,13 +1,45 @@
 .centerblock__filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 51px;
-  }
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-ms-flex-direction: row;
+flex-direction: row;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+margin-bottom: 51px;
+}
+
+.dropdown-item {
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-decoration-line: underline;
+font-feature-settings: 'pnum' on, 'lnum' on;
+color: #B672FF;
+}
+
+.filter__options {
+height: 160px;
+overflow-y: auto;
+position: absolute;
+z-index: 2;
+z-index:2;
+background-color: #313131;
+width: 248px;
+border-radius: 12px;
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 34px;
+gap: 10px;
+
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-decoration-line: underline;
+color: #B672FF;
+}
