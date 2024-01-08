@@ -9,8 +9,8 @@ const TrackSkeleton = () => (
   <ContentLoader 
     speed={2}
     width={1107}
-    height={200}
-    viewBox="0 0 1107 200"
+    height={50}
+    viewBox="0 0 1107 50"
     backgroundColor="#f2f2f2"
     foregroundColor="#c47878"
     spacing={1}
@@ -24,11 +24,11 @@ const TrackSkeleton = () => (
 
 const Content = () => {
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false);
-    }, 5000); 
+      // setIsLoading(false);
+    }, 500000); 
   }, []);
 
 

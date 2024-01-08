@@ -6,8 +6,8 @@ const MediaPlayerSkeleton = () => (
   <ContentLoader 
     speed={2}
     width={122}
-    height={78}
-    viewBox="0 0 122 78"
+    height={51}
+    viewBox="0 0 122 51"
     backgroundColor="#f2f2f2"
     foregroundColor="#c47878"
     spacing={1}
@@ -20,12 +20,12 @@ const MediaPlayerSkeleton = () => (
 );
 
 const MediaPlayer = () => {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
+      // setIsLoading(false);
+    }, 500000);
   }, []);
 
   return (
