@@ -24,11 +24,11 @@ const TrackSkeleton = () => (
 
 const Content = () => {
 
-  const [isLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
-      // setIsLoading(false);
-    }, 500000); 
+      setIsLoading(false);
+    }, 5000); 
   }, []);
 
 

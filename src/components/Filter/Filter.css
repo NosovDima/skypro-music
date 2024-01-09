@@ -57,7 +57,9 @@ margin: 0;
   border-radius: 4px;
 }
 
-.filter__frame {
+
+
+.filter__frame__author {
   max-height: 305px;
   max-width: 248px;
   padding: 34px;
@@ -65,8 +67,42 @@ margin: 0;
   background-color: #313131;
   border-radius: 12px;
   z-index: 2;
+  bottom: 315px;
+  left: 390px;
   
 }
+
+.filter__frame__year {
+  max-height: 305px;
+  max-width: 248px;
+  padding: 34px;
+  position: absolute;
+  background-color: #313131;
+  border-radius: 12px;
+  z-index: 2;
+  bottom: 315px;
+  left: 570px;
+
+  
+}
+
+
+.filter__frame__genre {
+  max-height: 305px;
+  max-width: 248px;
+  padding: 34px;
+  position: absolute;
+  background-color: #313131;
+  border-radius: 12px;
+  z-index: 2;
+  bottom: 315px;
+  left: 700px;
+  
+}
+
+
+
+
 
 .button__block {
   display: flex;

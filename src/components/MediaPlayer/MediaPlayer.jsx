@@ -13,19 +13,19 @@ const MediaPlayerSkeleton = () => (
     spacing={1}
   >
     
-    <rect x="63" y="0" rx="5" ry="5" width="59" height="15" />
-    <rect x="63" y="30" rx="5" ry="5" width="59" height="15" />
+    <rect x="63" y="4" rx="5" ry="5" width="59" height="15" />
+    <rect x="63" y="31" rx="5" ry="5" width="59" height="15" />
     <rect x="1" y="0" rx="0" ry="0" width="51" height="51" />
   </ContentLoader>
 );
 
 const MediaPlayer = () => {
-  const [isLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
-      // setIsLoading(false);
-    }, 500000);
+      setIsLoading(false);
+    }, 5000);
   }, []);
 
   return (

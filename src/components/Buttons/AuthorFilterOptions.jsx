@@ -1,6 +1,6 @@
 function AuthorFilterOptions() {
     return (
-        <div className="filter__frame" >
+        <div className="filter__frame__author" >
             <ul className="filter__options">
                 <li><a className="dropdown-item" href="http://">Calvin Harris</a></li>
                 <li><a className="dropdown-item" href="http://">Tom Boxer</a></li>
