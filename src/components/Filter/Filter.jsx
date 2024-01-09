@@ -20,12 +20,13 @@ function Filter() {
     return ( 
       <div className="centerblock__filter filter">
       <div className="filter__title">Искать по:</div>
-      <div><AuthorButton onClick={() => {toggleVisibility("author"); handleButtonClick() }} isActive={isActive}/>
-      {visible === "author" && <AuthorFilterOptions/>}</div>
-      <div><YearButton onClick={() => toggleVisibility("year")}/>
-      {visible === "year" && <YearFilterOptions/>}</div>
-      <div><GenreButton onClick={() => {toggleVisibility("genre"); handleButtonClick()}}/>
-      {visible === "genre" && <GenreFilterOptions/>}</div>
+      <div className="button__block"> <AuthorButton onClick={() => {toggleVisibility("author"); handleButtonClick() }} isActive={isActive}/>
+      {visible === "author" && <AuthorFilterOptions/>}
+      <YearButton onClick={() => toggleVisibility("year")}/>
+      {visible === "year" && <YearFilterOptions/>}
+      <GenreButton onClick={() => {toggleVisibility("genre"); handleButtonClick()}}/>
+      {visible === "genre" && <GenreFilterOptions/>}
+      </div>
     </div>
 
 

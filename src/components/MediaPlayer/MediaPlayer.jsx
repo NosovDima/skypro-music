@@ -6,15 +6,15 @@ const MediaPlayerSkeleton = () => (
   <ContentLoader 
     speed={2}
     width={122}
-    height={78}
-    viewBox="0 0 122 78"
+    height={51}
+    viewBox="0 0 122 51"
     backgroundColor="#f2f2f2"
     foregroundColor="#c47878"
     spacing={1}
   >
     
-    <rect x="63" y="0" rx="5" ry="5" width="59" height="15" />
-    <rect x="63" y="30" rx="5" ry="5" width="59" height="15" />
+    <rect x="63" y="4" rx="5" ry="5" width="59" height="15" />
+    <rect x="63" y="31" rx="5" ry="5" width="59" height="15" />
     <rect x="1" y="0" rx="0" ry="0" width="51" height="51" />
   </ContentLoader>
 );

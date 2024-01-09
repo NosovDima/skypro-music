@@ -1,6 +1,6 @@
 function GenreFilterOptions() {
     return (
-        <div>
+        <div className="filter__frame__genre" >
             <ul className="filter__options">
                 <li><a className="dropdown-item" href="http://">Hip-Hop</a></li>
                 <li><a className="dropdown-item" href="http://">Rock</a></li>
