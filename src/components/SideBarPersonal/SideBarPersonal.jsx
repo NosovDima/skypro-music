@@ -1,17 +1,15 @@
-import "./SideBarPersonal.css";
+import * as S from "./SideBarPersonal.styles"
 
 function SideBarPersonal() {
     return ( 
-        <div className="sidebar__personal">
-        <p className="sidebar__personal-name">Sergey.Ivanov</p>
-        <div className="sidebar__icon">
-          <svg alt="logout">
+        <S.SidebarPersonal>
+        <S.SidebarPersonalName>Sergey.Ivanov</S.SidebarPersonalName>
+        <S.SidebarIcon>
+          <S.LogoutSVG alt="logout">
             <use xlinkHref="img/icon/sprite.svg#logout"></use>
-          </svg>
-        </div>
-      </div>
-
-
+          </S.LogoutSVG>
+        </S.SidebarIcon>
+      </S.SidebarPersonal>
         );
     }
     

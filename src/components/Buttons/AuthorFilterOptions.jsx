@@ -1,15 +1,17 @@
+import * as S from "../Filter/Filter.styles"
+import "./btnStyles.css"
 function AuthorFilterOptions() {
     return (
-        <div className="filter__frame__author" >
-            <ul className="filter__options">
-                <li><a className="dropdown-item" href="http://">Calvin Harris</a></li>
-                <li><a className="dropdown-item" href="http://">Tom Boxer</a></li>
-                <li><a className="dropdown-item" href="http://">Ali Bakgor</a></li>
-                <li><a className="dropdown-item" href="http://">minthaze</a></li>
-                <li><a className="dropdown-item" href="http://">Стоункат</a></li>
-                <li><a className="dropdown-item" href="http://">Blue Foundation</a></li>
-            </ul>
-        </div>
+        <S.FilterFrameAuthor>
+            <S.FilterOptions>
+                <S.Dropdown><span href="http://">Calvin Harris</span></S.Dropdown>
+                <S.Dropdown><a href="http://">Tom Boxer</a></S.Dropdown>
+                <S.Dropdown><a href="http://">Ali Bakgor</a></S.Dropdown>
+                <S.Dropdown><a href="http://">minthaze</a></S.Dropdown>
+                <S.Dropdown><a href="http://">Стоункат</a></S.Dropdown>
+                <S.Dropdown><a href="http://">Blue Foundation</a></S.Dropdown>
+            </S.FilterOptions>
+        </S.FilterFrameAuthor>
     );
   };
 
