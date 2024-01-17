@@ -25,8 +25,10 @@ margin-right: 15px;`
 
 export const ButtonBlock = styled.div`
 display: flex;
-gap: 10px;
+gap: 15px;
 align-items: center;`
+
+
 
 export const FilterButton = styled.div`
 font-style: normal;
@@ -39,6 +41,9 @@ padding: 6px 20px;
 position: relative`
 
 export const FilterBox = styled.div`
+display: flex;
+gap: 15px;
+align-items: center;
 `
 
 
@@ -52,7 +57,7 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-bottom: 530px;`
+bottom: 590px;`
 
 
 
@@ -64,7 +69,7 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-bottom: 530px;
+bottom: 590px;
 `
 
 export const FilterFrameYear = styled.div`
@@ -75,7 +80,7 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-bottom: 530px;;`
+bottom: 590px;`
 
 
 export const FilterOptions = styled.ul`
