@@ -8,6 +8,7 @@ import Filter from "./components/Filter/Filter";
 import Content from "./components/Content/Content";
 import SideBarPersonal from "./components/SideBarPersonal/SideBarPersonal";
 import SideBarBlock from "./components/SideBarBlock/SideBarBlock";
+import { AppRoutes } from "./routes.jsx";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -64,9 +65,13 @@ function App() {
 
   return (
     
+    
     <> 
+    
     <GlobalStyle />
     <S.Wrapper>
+    <AppRoutes />
+
       <S.Container>
         <S.Main>
           <MainNav />
