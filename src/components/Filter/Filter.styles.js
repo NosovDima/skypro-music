@@ -26,7 +26,8 @@ margin-right: 15px;`
 export const ButtonBlock = styled.div`
 display: flex;
 gap: 15px;
-align-items: center;`
+align-items: center;
+`
 
 
 
@@ -44,6 +45,7 @@ export const FilterBox = styled.div`
 display: flex;
 gap: 15px;
 align-items: center;
+
 `
 
 
@@ -57,7 +59,7 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-bottom: 590px;`
+top: 285px;`
 
 
 
@@ -69,8 +71,7 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-bottom: 590px;
-`
+top: 285px;`
 
 export const FilterFrameYear = styled.div`
 max-height: 305px;
@@ -80,7 +81,7 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-bottom: 590px;`
+top: 285px;`
 
 
 export const FilterOptions = styled.ul`
