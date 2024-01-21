@@ -27,6 +27,7 @@ export const ButtonBlock = styled.div`
 display: flex;
 gap: 15px;
 align-items: center;
+position: relative;
 `
 
 
@@ -51,7 +52,7 @@ align-items: center;
 
 
 export const FilterFrameAuthor = styled.div`
-position: relative
+position: relative;
 max-height: 305px;
 max-width: 248px;
 padding: 34px;
@@ -59,19 +60,19 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-top: 285px;`
+top: 45px;`
 
 
 
 export const FilterFrameGenre = styled.div`
 max-height: 305px;
-max-width: 248px;
+width: 248px;
 padding: 34px;
 position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-top: 285px;`
+top: 45px;`
 
 export const FilterFrameYear = styled.div`
 max-height: 305px;
@@ -81,7 +82,7 @@ position: absolute;
 background-color: #313131;
 border-radius: 12px;
 z-index: 2;
-top: 285px;`
+top: 45px;`
 
 
 export const FilterOptions = styled.ul`

@@ -70,10 +70,10 @@ function App() {
     
     <GlobalStyle />
     <S.Wrapper>
-    <AppRoutes />
 
       <S.Container>
         <S.Main>
+        <AppRoutes />
           <MainNav />
           <S.MainCenterblock>
             <Search />

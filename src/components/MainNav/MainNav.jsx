@@ -1,5 +1,6 @@
 import { useState } from "react";
 import * as S from "./MainNav.styles"
+// import { MenuLink } from "react-router-dom";
  
   const MainNav = () => {
     const [visible, setVisible] = useState(false);
@@ -24,7 +25,7 @@ import * as S from "./MainNav.styles"
             <S.NavMenu>
               <S.MenuList>
                 <S.MenuItem>
-                  <S.MenuLink href="#">Главное</S.MenuLink>
+                  <S.MenuLink to="/registration">Главное</S.MenuLink>
                 </S.MenuItem>
                 <S.MenuItem>
                   <S.MenuLink href="#">Мой плейлист</S.MenuLink>
