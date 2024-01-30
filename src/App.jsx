@@ -9,6 +9,7 @@ import Content from "./components/Content/Content";
 import SideBarPersonal from "./components/SideBarPersonal/SideBarPersonal";
 import SideBarBlock from "./components/SideBarBlock/SideBarBlock";
 import { AppRoutes } from "./routes.jsx";
+import { useState } from "react";
 
 
 const GlobalStyle = createGlobalStyle`
@@ -61,6 +62,12 @@ body {
 } `
 
 function App() {
+  const [user, setUser] = useState(null);
+  const handleLogin = () => {
+    localStorage.setItem('login', 'SetLogin');
+    const getuser = localStorage.getItem('login');
+    setUser(getuser)
+  }
 
 
   return (
@@ -73,8 +80,9 @@ function App() {
 
       <S.Container>
         <S.Main>
-        <AppRoutes />
-          <MainNav />
+        <AppRoutes user={user} onClick={handleLogin} />
+          <MainNav/>
+          
           <S.MainCenterblock>
             <Search />
             <S.CenterblockH2>Треки</S.CenterblockH2>

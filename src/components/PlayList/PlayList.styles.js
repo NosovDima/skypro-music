@@ -1,6 +1,23 @@
-import styled from 'styled-components';
+import styled from 'styled-components'; 
 import { Link } from "react-router-dom";
 
+
+export const SidebarItem = styled.div`
+  width: 250px;
+  height: 150px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+`
+
+export const SidebarLink = styled(Link)`
+  width: 100%;
+  height: 100%;
+`
+export const SidebarImg = styled.img`
+  width: 100%;
+  height: auto;
+`
 export const SidebarBlock = styled.div`
 height: 100%;
 padding: 240px 0 0 0;
@@ -34,26 +51,5 @@ export const SideBarSkeleton = styled.div`
 display: flex;
 flex-direction: column;
 gap: 30px;
-
-`
-
-export const SidebarItem = styled.div`
-width: 250px;
-height: 150px;
-
-&:not(:last-child) {
-  margin-bottom: 30px;
-}
-`
-
-export const SidebarLink = styled(Link)`
-width: 100%;
-height: 100%;
-
-`
-
-export const SidebarIMG = styled.img`
-width: 100%;
-height: auto;
 
 `
