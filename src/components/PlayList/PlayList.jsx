@@ -4,7 +4,7 @@ import { useState } from "react";
 import ContentLoader from "react-content-loader"
 
 
-export const playLists = [
+export const PlayLists = [
   {
     id: 1,
     name: "day's playlist",
@@ -59,12 +59,12 @@ export const PlayList  = () => {
             ))}
           </S.SideBarSkeleton>
         ) : (
-          playLists.map((playListItem) => (
-            <S.SidebarItem key={playListItem.id}>
-            <S.SidebarLink to={`/category/${playListItem.id}`}>
+          PlayLists.map((PlayListItem) => (
+            <S.SidebarItem key={PlayListItem.id}>
+            <S.SidebarLink to={`/Category/${PlayListItem.id}`}>
               <S.SidebarImg
-               src={playListItem.src}
-               alt={playListItem.name}
+               src={PlayListItem.src}
+               alt={PlayListItem.name}
               />
             </S.SidebarLink>
           </S.SidebarItem>

@@ -1,4 +1,4 @@
-import * as S from "./LoginStyles.jsx"
+import * as S from "./LoginStyles"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 

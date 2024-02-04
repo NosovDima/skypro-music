@@ -11,7 +11,6 @@ import SideBarBlock from "./components/SideBarBlock/SideBarBlock";
 import { AppRoutes } from "./routes.jsx";
 import { useState } from "react";
 
-
 const GlobalStyle = createGlobalStyle`
 
 * {
@@ -61,7 +60,7 @@ body {
   
 } `
 
-function App() {
+export function App() {
   const [user, setUser] = useState(null);
   const handleLogin = () => {
     localStorage.setItem('login', 'SetLogin');
@@ -71,10 +70,7 @@ function App() {
 
 
   return (
-    
-    
     <> 
-    
     <GlobalStyle />
     <S.Wrapper>
 

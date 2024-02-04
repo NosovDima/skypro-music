@@ -1,5 +1,5 @@
 import * as S from "./SideBarPersonal.styles"
-import PlayLists from "../PlayListPL/PlayListP"
+import PlayLists from "../PlayListP/PlayListP"
 
 function SideBarPersonal() {
 

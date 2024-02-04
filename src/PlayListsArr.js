@@ -1,4 +1,4 @@
-export const playLists = [
+export const PlayLists = [
     {
       id: 1,
       name: "day's playlist",
