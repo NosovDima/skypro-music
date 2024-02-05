@@ -10,7 +10,7 @@ function SideBarPersonal() {
     return (
       <S.MainSidebar>
         <S.SidebarPersonal>
-        <S.SidebarPersonalName>Sergey.Ivanov</S.SidebarPersonalName>
+        <S.SidebarPersonalName>Dima</S.SidebarPersonalName>
         <S.SidebarIcon onClick={handleLogOut} to="/login">
           <S.LogoutSVG alt="logout">
             <use xlinkHref="img/icon/sprite.svg#logout"></use>

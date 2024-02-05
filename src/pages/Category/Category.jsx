@@ -9,7 +9,7 @@ export const  Category = () => {
 
   return (
     <div>
-      <h1>Подборкa {PlayListItem.id}</h1>
+      <h1>Playlist {PlayListItem.id}</h1>
     </div>
   );
 };
