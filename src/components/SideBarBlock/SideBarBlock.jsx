@@ -1,6 +1,8 @@
-import "./SideBarBlock.css";
+import * as S from "./SideBarBlock.styles"
 import  { useState, useEffect } from "react";
 import ContentLoader from "react-content-loader"
+import { PlayList } from "../PlayList/PlayList"
+
 
 
 
@@ -34,47 +36,45 @@ const SideBarBlock = () => {
   }, []);
 
   return ( 
-    <div className="sidebar__block">
-      <div className="sidebar__list">
+    <S.SidebarBlock>
+      <S.SidebarList>
         {isLoading ? (
-          <div className="SideBarSkeleton">
+          <S.SideBarSkeleton>
             {[...Array(3)].map((_, index) => (
               <SideBarSkeleton key={index} className="skeleton-element" />
             ))}
-          </div>
+          </S.SideBarSkeleton>
         ) : (
           <>
-            <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
+            <S.SidebarItem>
+            <S.SidebarLink href="#">
+              <S.SidebarIMG
                 src="img/playlist01.png"
                 alt="day's playlist"
               />
-            </a>
-          </div>
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-              <img
-                className="sidebar__img"
+            </S.SidebarLink>
+          </S.SidebarItem>
+          <S.SidebarItem>
+            <S.SidebarLink href="#">
+              <S.SidebarIMG
                 src="img/playlist02.png"
                 alt="day's playlist"
               />
-            </a>
-          </div>
-          <div className="sidebar__item">
-            <a className="sidebar__link" href="#">
-            <img
-                className="sidebar__img"
+            </S.SidebarLink>
+          </S.SidebarItem>
+          <S.SidebarItem>
+            <S.SidebarLink href="#">
+            <S.SidebarIMG
                 src="img/playlist01.png"
                 alt="day's playlist"
               />
-              </a>
-            </div>
+              </S.SidebarLink>
+            </S.SidebarItem>
           </>
         )}
-      </div>
-    </div>
+        <PlayList />
+      </S.SidebarList>
+    </S.SidebarBlock>
   );
 };
 
