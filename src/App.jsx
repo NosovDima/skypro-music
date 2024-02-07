@@ -1,13 +1,6 @@
 import { createGlobalStyle} from "styled-components";
 import "./App.styles.js";
 import * as S from "./App.styles.js"
-// import MediaPlayer from "./components/MediaPlayer/MediaPlayer"; 
-// import MainNav from "./components/MainNav/MainNav";
-// import Search from "./components/Search/Search";
-// import Filter from "./components/Filter/Filter";
-// import Content from "./components/Content/Content";
-// import SideBarPersonal from "./components/SideBarPersonal/SideBarPersonal";
-// import SideBarBlock from "./components/SideBarBlock/SideBarBlock";
 import { AppRoutes } from "./routes.jsx";
 import { useState } from "react";
 
