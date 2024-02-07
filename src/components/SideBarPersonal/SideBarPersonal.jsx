@@ -1,17 +1,26 @@
-import "./SideBarPersonal.css";
+import * as S from "./SideBarPersonal.styles"
+import PlayLists from "../PlayListP/PlayListP"
 
 function SideBarPersonal() {
-    return ( 
-        <div className="sidebar__personal">
-        <p className="sidebar__personal-name">Sergey.Ivanov</p>
-        <div className="sidebar__icon">
-          <svg alt="logout">
+
+  const handleLogOut = () =>  {
+    localStorage.removeItem('login')
+  }
+  
+    return (
+      <S.MainSidebar>
+        <S.SidebarPersonal>
+        <S.SidebarPersonalName>Dima</S.SidebarPersonalName>
+        <S.SidebarIcon onClick={handleLogOut} to="/login">
+          <S.LogoutSVG alt="logout">
             <use xlinkHref="img/icon/sprite.svg#logout"></use>
-          </svg>
-        </div>
-      </div>
-
-
+          </S.LogoutSVG>
+        </S.SidebarIcon>
+      </S.SidebarPersonal>
+      <S.SidebarBlock>
+      <PlayLists />
+    </S.SidebarBlock>
+    </S.MainSidebar>
         );
     }
     
