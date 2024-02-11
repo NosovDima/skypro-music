@@ -5,13 +5,10 @@ import Search from "../components/Search/Search";
 import Filter from "../components/Filter/Filter";
 import Content from "../components/Content/Content";
 import SideBarPersonal from "../components/SideBarPersonal/SideBarPersonal";
-import SideBarBlock from "../components/SideBarBlock/SideBarBlock";
 
 
 
-export function Main() {
-
-
+export function Main({ setUser }) {
 
 
     return (
@@ -27,9 +24,7 @@ export function Main() {
               <Content />
             </S.MainCenterblock>
             <S.MainSidebar>
-             <SideBarPersonal />
-             <SideBarBlock />
-              
+             <SideBarPersonal setUser={setUser} />
             </S.MainSidebar>
           </S.Main>
           <MediaPlayer />

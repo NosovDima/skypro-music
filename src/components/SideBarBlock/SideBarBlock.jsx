@@ -1,7 +1,7 @@
 import * as S from "./SideBarBlock.styles"
 import  { useState, useEffect } from "react";
 import ContentLoader from "react-content-loader"
-import { PlayList } from "../PlayList/PlayList"
+
 
 
 
@@ -72,7 +72,7 @@ const SideBarBlock = () => {
             </S.SidebarItem>
           </>
         )}
-        <PlayList />
+    
       </S.SidebarList>
     </S.SidebarBlock>
   );

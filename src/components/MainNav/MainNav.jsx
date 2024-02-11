@@ -33,7 +33,7 @@ import { Link } from "react-router-dom";
                   <Link className="App-link" to="/Registration">Главное</Link></S.MenuLink>
                 </S.MenuItem>
                 <S.MenuItem>
-                  <S.MenuLink href="#">Мой плейлист</S.MenuLink>
+                  <S.MenuLink onClick={handleLogOut} to="/MyPlaylist">Мой плейлист</S.MenuLink>
                 </S.MenuItem>
                 <S.MenuItem>
                 <S.MenuLink onClick={handleLogOut} to="/login">
