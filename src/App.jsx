@@ -55,23 +55,23 @@ body {
 
 export function App() {
   const [user, setUser] = useState(null);
+
   const handleLogin = () => {
     localStorage.setItem('login', 'SetLogin');
     const getuser = localStorage.getItem('login');
-    setUser(getuser)
-  }
-
+    setUser(getuser);
+  };
 
   return (
-    <> 
-    <GlobalStyle />
-    <S.Wrapper>
-
-      <S.Container>
-      <AppRoutes user={user} onClick={handleLogin} />
-      </S.Container>
-    </S.Wrapper>
+    <>
+      <GlobalStyle />
+      <S.Wrapper>
+        <S.Container>
+          <AppRoutes user={user} onClick={handleLogin} />
+        </S.Container>
+      </S.Wrapper>
     </>
   );
 }
+
 export default App;
