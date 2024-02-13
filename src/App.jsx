@@ -67,7 +67,7 @@ export function App() {
       <GlobalStyle />
       <S.Wrapper>
         <S.Container>
-          <AppRoutes user={user} onClick={handleLogin} />
+          <AppRoutes user={user} setUser={setUser} onClick={handleLogin} />
         </S.Container>
       </S.Wrapper>
     </>
