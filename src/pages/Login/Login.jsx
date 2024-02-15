@@ -13,7 +13,9 @@ export const Login = ({onClick}) => {
     );
     return (
       <S.LoginBox>
+         <Link to="/Registration">
         <S.LoginImg src="img/logo_modal.png" alt="" />
+        </Link>
         <S.LoginInputEmail placeholder="Почта" type="text" />
         <S.LoginInputPassword placeholder="Пароль" type="text" />
         <S.LinkS onClick={onClick} to="/">
