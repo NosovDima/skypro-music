@@ -13,7 +13,7 @@ export const Login = ({onClick}) => {
     );
     return (
       <S.LoginBox>
-         <Link to="/Registration">
+         <Link to="/registration">
         <S.LoginImg src="img/logo_modal.png" alt="" />
         </Link>
         <S.LoginInputEmail placeholder="Почта" type="text" />
@@ -22,7 +22,7 @@ export const Login = ({onClick}) => {
         <S.LoginButtonIn onClick={handleLogin}>Войти</S.LoginButtonIn>
         {console.log(user)}
       </S.LinkS>
-      <Link to="/Registration">
+      <Link to="/registration">
         <S.LoginButtonReg>Зарегистрироваться</S.LoginButtonReg>
       </Link>
     </S.LoginBox>

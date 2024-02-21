@@ -30,10 +30,10 @@ import { Link } from "react-router-dom";
               <S.MenuList>
                 <S.MenuItem>
                   <S.MenuLink>
-                  <Link className="App-link" to="/Registration">Главное</Link></S.MenuLink>
+                  <Link className="App-link" to="/registration">Главное</Link></S.MenuLink>
                 </S.MenuItem>
                 <S.MenuItem>
-                  <S.MenuLink onClick={handleLogOut} to="/MyPlaylist">Мой плейлист</S.MenuLink>
+                  <S.MenuLink onClick={handleLogOut} to="/myPlaylist">Мой плейлист</S.MenuLink>
                 </S.MenuItem>
                 <S.MenuItem>
                 <S.MenuLink onClick={handleLogOut} to="/login">

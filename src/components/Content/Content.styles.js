@@ -7,7 +7,8 @@ display: flex;
 -webkit-box-orient: vertical;
 -webkit-box-direction: normal;
 -ms-flex-direction: column;
-flex-direction: column;`
+flex-direction: column;
+`
 
 
   

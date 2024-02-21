@@ -5,6 +5,9 @@ width: 100%;
 min-height: 100%;
 overflow: hidden;
 background-color: #383838;
+
+
+
 `
 
 export const Container = styled.div`
@@ -13,6 +16,11 @@ height: 100vh;
 margin: 0 auto;
 position: relative;
 background-color: #181818;
+overflow-y: auto;
+  &::-webkit-scrollbar {
+    display: none;
+
+
 `
 
 export const Main = styled.main`
@@ -27,6 +35,8 @@ flex-wrap: wrap;
 -webkit-box-pack: justify;
 -ms-flex-pack: justify;
 justify-content: space-between;
+
+
 `
 
 export const MainCenterblock = styled.div`
@@ -35,6 +45,7 @@ width: auto;
 -ms-flex-positive: 3;
 flex-grow: 3;
 padding: 20px 40px 20px 111px;
+
 `
 
 export const CenterblockH2 = styled.h2`
